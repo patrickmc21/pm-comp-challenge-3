@@ -1,0 +1,510 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+}
+
+.site-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2000px;
+  width: 12.5%;
+  max-width: 250px;
+  min-width: 171px;
+  color: white;
+  font-size: 20px;
+}
+
+.site-nav section {
+  padding-top: 25px;
+}
+
+.site-nav article {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.site-nav h5 {
+  margin-left: 10%;
+  font-size: 18px; 
+  color: gray; 
+}
+
+.site-nav li {
+  padding-left: 10%;
+  height: 40px;
+  margin: 13px 0;
+  padding-top: 9px;
+}
+
+.site-nav li:hover {
+  background-color: #f56531;
+  color: gray;
+}
+
+.user-profile {
+  border-bottom: 1px solid black;
+  height: 200px;
+  width: 100%;
+  background-color: magenta;
+}
+
+.user-profile article {
+  height: 160px;
+  width: 80%;
+  margin: auto;
+}
+
+.profile-pic {
+  margin: 5px auto;
+  height: 100px;
+  width: 100px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.user-profile h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.main-nav {
+  border-bottom: 1px solid black;
+  height: 325px;
+  width: 100%;
+  background-color: pink;
+}
+
+.main-nav article {
+  height: 295px;
+}
+
+.admin {
+  border-bottom: 1px solid black;
+  height: 325px;
+  width: 100%;
+  background-color: coral;
+}
+
+.admin article {
+  height: 295px;
+}
+
+.categories {
+  height: 300px;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.categories article {
+  height: 270px;
+}
+
+.categories div {
+  position: relative;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.one div {
+  background-color: red;
+}
+
+.one div:hover {
+  background-color: darkred;
+}
+
+.two div {
+  background-color: blue;
+}
+
+.two div:hover {
+  background-color: darkblue;
+}
+
+.three div {
+  background-color: green;
+}
+
+.three div:hover {
+  background-color: darkgreen;
+}
+
+.four div {
+  background-color: orange;
+}
+
+.four div:hover {
+  background-color: darkorange;
+}
+
+.checkmark {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.categories input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.categories .checkmark:after {
+  top: 0px;
+  left: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.categories input {
+  height: 20px;
+  width: 20px;
+  opacity: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  height: 80px;
+  width: 87.5%;
+  max-width: 1450px;
+  min-width: 1200px;
+  border: 2px solid chartreuse;
+}
+
+header button {
+  padding: 0;
+  margin: 0 -2px;
+  height: 80px;
+  width: 8%;
+  border-radius: 0;
+  border-style: none; 
+  border-right: 1px solid lightgray;
+}
+
+header button:hover {
+  background-color: blue;
+}
+
+header input {
+  margin: 0 -2px;
+  vertical-align: top;
+  height: 76px;
+  width: 68%;
+  font-size: 22px;
+  border: none;
+  border-right: 1px solid lightgray;
+}
+
+main {
+  position: absolute;
+  top: 80px;
+  left: 12.5%;
+  height: 1920px;
+  width: 87.5%;
+  max-width: 1450px;
+  min-width: 1200px;
+  overflow: scroll;
+}
+
+.page-nav {
+  padding-top: 60px;
+  height: 240px;
+  width: 100%;
+  background-color: orange;
+}
+
+.page-nav div {
+  height: 182px;
+  width: 90%;
+  margin: auto;
+  border: 2px solid black;
+}
+
+.page-nav-header {
+  display: inline-block;
+  height: 100px;
+  width: 40%;
+  border: 2px solid chartreuse;
+  margin: 6px 26% 16px 0;
+}
+
+.page-nav-header h1 { 
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.page-nav-header p {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.page-nav-header ul {
+  display: inline-block;
+  list-style: disc;
+  color: blue;
+}
+
+.page-nav-header ul:hover {
+  color: red;
+}
+
+.page-nav-edit {
+  display: inline-block;
+  margin: 12px 0 10px 0;
+  vertical-align: top;
+  border: 2px solid black; 
+  width: 33.6%;
+  height: 80px;
+}
+
+.page-nav-edit li {
+  display: inline;
+}
+
+.page-nav-edit button {
+  border-radius: 50%;
+  margin-left: 14px;
+  background-color: transparent;
+  height: 55px;
+  width: 14%;
+}
+
+.page-nav-edit button:hover {
+  background-color: blue;
+}
+
+#open {
+  vertical-align: top;
+  border-radius: 25px;
+  width: 37%;
+}
+
+.cycle-page-nav {
+  height: 43px;
+}
+
+.cycle-page-nav ul {
+  height: 43px;
+}
+
+.cycle-page-nav li{
+  display: inline;
+  box-sizing: content-box;
+  margin-right: 28px;
+  padding-bottom: 29px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.summary {
+  border-bottom: 4px solid pink;   
+}
+
+.cycle-page-nav li:hover {
+  border-bottom: 4px solid pink; 
+}
+
+.page-body {
+  padding-top: 60px;
+  height: 1685px;
+  width: 100%;
+  background-color: gray;
+}
+
+.page-body article {
+  display: inline-block;
+}
+
+.data-display {
+  height: 340px;
+  width: 90%;
+  margin-left: 5%;
+  border: 2px solid red;
+}
+
+.donut-figure,
+.bar-graph {
+  display: inline-block;
+  height: 340px;
+  width: 47.5%;
+  border: 2px solid black;
+}
+
+.donut-figure {
+  float: left;
+  margin-right: 4.6%;
+}
+
+.donut-figure figure,
+.bar-graph figure {
+  height: 200px;
+  width: 100%;
+  border: 2px solid green;
+}
+
+.donut-figure figcaption,
+.bar-graph figcaption {
+  height: 60px;
+  width: 50%;
+  border: 2px solid orange;
+  margin: auto;
+}
+
+.user-info {
+  float: left;
+  margin: 80px 3% 80px 5%;
+  height: 1120px;
+  width: 56%;
+  background-color: blue;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+}
+
+.user-info-header,
+tr {
+  height: 112px;
+}
+
+.user-info-header {
+  padding: 7% 5%;
+  background-color: orange;
+}
+
+.user-info-header h3 {
+  display: inline-block;
+  margin-right: 4%;
+  font-size: 18px;
+}
+
+.user-info-header button {
+  height: 30px;
+  width: 85px;
+  border-style: none;
+}
+
+.user-info-header button:hover {
+  background-color: coral;
+}
+
+
+th{
+  padding-top: 8%;
+  margin: 0 5%;
+  width: 23%;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 2px solid gray;
+}
+
+td {
+  line-height: 20px;
+}
+
+.description {
+  height: 224px;
+}
+
+.more-content {
+  margin: 80px 1% 80px 3%;
+  display: inline-block;
+  height: 1120px;
+  width: 28%;
+  background-color: pink;
+}
+
+.social-media {
+  height: 600px;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.widget {
+  height: 295px;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.social-media button {
+  display: block;
+  height: 92px;
+  width: 100%;
+  margin: 0 0 10px 0;
+  border-style: none;
+}
+
+.social-media button:hover {
+  background-color: chartreuse;
+}
+
+.link-job h4,
+.widget h4,
+.resume h4 {
+  font-size: 26px;
+  margin: 40px 0 20px 0;
+}
+
+.link-job p,
+.widget p,
+.resume p {
+  font-size: 18px;
+  margin-bottom: 11px;
+  line-height: 24px;
+}
+
+.link-job input,
+.widget input {
+  height: 80px;
+  width: 74.5%;
+  margin: 0 -2px 0 0;
+}
+
+.resume input {
+  height: 80px;
+  width: 100%;
+}
+
+.link-job input::placeholder,
+.widget input::placeholder,
+.resume input::placeholder {
+  font-size: 18px;
+}
+
+.link-job button,
+.widget button {
+  vertical-align: top;
+  font-size: 16px;
+  display: inline;
+  height: 80px;
+  width: 25%;
+  margin: 0 0 0 -2px;
+  background-color: red;
+}
+
+.link-job button:hover,
+.widget button:hover {
+  background-color: blue;
+}
