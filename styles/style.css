@@ -28,7 +28,7 @@ body {
 h5 {
   margin-left: 10%;
   font-size: 18px; 
-  color: gray; 
+  color: #808080; 
 }
 
 .site-nav li {
@@ -41,11 +41,11 @@ h5 {
 
 .site-nav li:hover {
   background-color: #9A161D;
-  color: gray;
+  color: #808080;
 }
 
 .user-profile {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   height: 200px;
   width: 100%;
 }
@@ -83,7 +83,7 @@ h5 {
 }
 
 .main-nav {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   height: 325px;
   width: 100%;
 }
@@ -93,7 +93,7 @@ h5 {
 }
 
 .admin {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   height: 325px;
   width: 100%;
 }
@@ -121,41 +121,41 @@ h5 {
 }
 
 .colorado div {
-  background-color: red;
+  background-color: #ff0000;
 }
 
 .colorado div:hover {
-  background-color: darkred;
+  background-color: #8b0000;
 }
 
 .utah div {
-  background-color: blue;
+  background-color: #0000ff;
 }
 
 .utah div:hover {
-  background-color: darkblue;
+  background-color: #00008b;
 }
 
 .new-mexico div {
-  background-color: green;
+  background-color: #008000;
 }
 
 .new-mexico div:hover {
-  background-color: darkgreen;
+  background-color: #006400;
 }
 
 .arizona div {
-  background-color: orange;
+  background-color: #ffa500;
 }
 
 .arizona div:hover {
-  background-color: darkorange;
+  background-color: #ff8c00;
 }
 
 .checkmark {
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #FFFFFF;
 }
 
 .checkmark:after {
@@ -173,11 +173,9 @@ h5 {
   left: 7px;
   width: 5px;
   height: 10px;
-  border: solid black;
+  border: solid #000000;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .categories input {
@@ -284,11 +282,11 @@ h1 {
 .page-nav-header ul {
   display: inline-block;
   list-style: disc;
-  color: blue;
+  color: #0000ff;
 }
 
 .page-nav-header ul:hover {
-  color: red;
+  color: #780006;
 }
 
 .page-nav-edit {
@@ -332,7 +330,7 @@ td div{
   display: inline-block;
   height: 8px;
   width: 8px;
-  background-color: chartreuse;
+  background-color: #7fff00;
   border-radius: 50%;
 }
 
@@ -341,7 +339,7 @@ td div {
 }
 
 #open div{
-  background-color: chartreuse;
+  background-color: #7fff00;
   margin: 0 7% 2% 0;
 }
 
@@ -399,14 +397,14 @@ td div {
 hr {
   display: inline-block;
   width: 47%;
-  border-color: black;
+  border-color: #000000;
 }
 
 .border-button {
   vertical-align: top;
   border-style: none;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #000000;
   background-color: transparent;
   font-size: 12px;
   margin: 0 1%;
@@ -467,7 +465,7 @@ hr {
 #bar-graph {
   border-width: 0 0 2px 2px;
   border-style: solid;
-  border-color: black;
+  border-color: #000000;
   height: 160px;
   width: 90%;
   margin:  20px auto;
@@ -563,7 +561,7 @@ hr {
   content: attr(data-tooltip);
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: #000000;
   color: #FFFFFF;
   text-align: center;
   border-radius: 4px;
@@ -596,7 +594,7 @@ hr {
     bottom: 110%;
     left: 40%;
     border-width: 6px 6px 0;
-    border-right-color: black;
+    border-right-color: #000000;
     transform: rotate(45deg);
 }
 
@@ -650,7 +648,7 @@ th{
 }
 
 tr {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #808080;
 }
 
 td {
@@ -689,13 +687,13 @@ td p {
 .social-media {
   height: 600px;
   width: 100%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
 }
 
 .gpx {
   height: 295px;
   width: 100%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
 }
 
 .social-media button {
@@ -1347,7 +1345,7 @@ h4 i {
     vertical-align: top;
     margin-right: -6px;
     border-style: none;
-    border-right: 2px solid gray;
+    border-right: 2px solid #808080;
   }
 
   .main-nav article,
