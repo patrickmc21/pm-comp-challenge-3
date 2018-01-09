@@ -39,6 +39,7 @@ h5 {
 }
 
 .site-nav li:hover {
+  border-left: 3px solid #BE333A;
   background-color: #9A161D;
   color: #808080;
 }
@@ -428,7 +429,7 @@ hr {
 
 .donut-figure figcaption,
 .bar-graph figcaption {
-  padding: 4%
+  padding: 4%;
   border: 2px solid #1D1D1D;
   border-radius: 30px;
   margin: 2% auto;
@@ -1350,7 +1351,7 @@ h4 i {
   .main-nav article,
   .admin article,
   .categories article {
-    padding-top: 22%
+    padding-top: 22%;
     height: 100px;
   }
 
