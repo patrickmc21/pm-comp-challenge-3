@@ -36,7 +36,7 @@ h5 {
   height: 40px;
   margin: 13px 0;
   padding-top: 9px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .site-nav li:hover {
@@ -356,7 +356,7 @@ td div {
   box-sizing: content-box;
   margin-right: 28px;
   padding-bottom: 29px;
-  font-size: 1.4rem;
+  font-size: 22px;
   color: #984339;
 }
 
@@ -436,7 +436,7 @@ hr {
   background-color: #FFFFFF;
   margin: 2% auto;
   text-align: center;
-  font-size: 1rem;
+  font-size: 16px;
   padding: 4%
 }
 
@@ -451,7 +451,7 @@ hr {
 }
 
 .donut-title2 {
-  font-size: 20%;
+  font-size: 3px;
   transform: translateY(2px);
   text-anchor: middle;
 }
@@ -631,7 +631,7 @@ tr {
 .user-info-header button {
   height: 30px;
   width: 85px;
-  font-size: 1rem;
+  font-size: 16px;
   border-style: none;
 }
 
@@ -844,7 +844,7 @@ h4 i {
 
 @media screen and (max-width: 1150px) {
   .site-nav li {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 }
 
@@ -864,7 +864,7 @@ h4 i {
   }
 
   .site-nav li {
-    font-size: 0.8rem;
+    font-size: 12px;
   }
 
   .page-nav {
@@ -880,7 +880,7 @@ h4 i {
   }
 
   .cycle-page-nav li {
-    font-size: .9rem;
+    font-size: 14px;
   }
 
   .bar {
@@ -902,7 +902,7 @@ h4 i {
   }
 
   .site-nav li {
-    font-size: 0.7rem;
+    font-size: 11px;
     margin: 1px 0;
   }
 
@@ -928,7 +928,7 @@ h4 i {
 
 @media screen and (max-width: 833px) {
   .site-nav li {
-    font-size: 0.6rem;
+    font-size: 10px;
     margin: 1px 0;
   }
 
@@ -938,11 +938,11 @@ h4 i {
   }
 
   th {
-    font-size: 82%;
+    font-size: 13px;
   }
 
   td {
-    font-size: 82%;
+    font-size: 13px;
   }
 }
 
@@ -957,7 +957,7 @@ h4 i {
     width: 60px;
   }
   .cycle-page-nav li {
-    font-size: .8rem;
+    font-size: 13px;
   }
   .bar {
     width: 5.8%;
@@ -979,11 +979,11 @@ h4 i {
     font-size: 28px;
   }
   .page-nav-header p{
-    font-size: 0.7rem;
+    font-size: 11px;
   }
 
   .page-nav-header li{
-    font-size: 0.7rem;
+    font-size: 11px;
   }
 
   .page-body {
@@ -1006,7 +1006,7 @@ h4 i {
   }
 
   .cycle-page-nav li {
-    font-size: .6rem;
+    font-size: 10px;
   }
 
   .bar {
@@ -1037,7 +1037,7 @@ h4 i {
 
   .donut-figure figcaption,
   .bar-graph figcaption {
-    font-size: 0.8rem;
+    font-size: 13px;
   }
 
   hr {
@@ -1138,7 +1138,7 @@ h4 i {
   }
 
   .site-nav li {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .main-nav i, 
@@ -1147,12 +1147,12 @@ h4 i {
   }
 
   .page-nav-header p{
-    font-size: 0.6rem;
+    font-size: 10px;
     margin-left: 10px;
   }
 
   .page-nav-header li{
-    font-size: 0.6rem;
+    font-size: 10px;
     margin-left: 25px;
   }
 
@@ -1207,13 +1207,13 @@ h4 i {
 
   .user-info-header h3 {
     margin-right: 4%;
-    font-size: 0.9rem;
+    font-size: 15px;
   }
 
   .user-info-header button {
     height: 30px;
     width: 65px;
-    font-size: 1rem;
+    font-size: 16px;
     margin-top: 18px;
   }
 
@@ -1222,14 +1222,14 @@ h4 i {
   }
 
   th {
-    font-size: 1rem;
+    font-size: 16px;
     width: 41%;
   }
 
   td {
     padding-left: 5%;
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .more-content {
@@ -1270,7 +1270,7 @@ h4 i {
   .link-trail h4,
   .gpx h4,
   .send-trail h4 {
-    font-size: 1.3rem;
+    font-size: 21px;
     margin: 11px 0 8px 0;
   }
 
@@ -1289,8 +1289,8 @@ h4 i {
   .gpx p,
   .send-trail p {
     margin-bottom: 7px;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .social-media button {
@@ -1362,7 +1362,7 @@ h4 i {
   }
 
   h5 {
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -1395,7 +1395,7 @@ h4 i {
   }
 
   header input::placeholder {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .menu {
@@ -1432,17 +1432,17 @@ h4 i {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 48px;
     margin-bottom: 30px;
   }
 
   .page-nav-header p{
-    font-size: 1rem;
+    font-size: 16px;
     margin: 0 0 0 5px;
   }
 
   .page-nav-header li{
-    font-size: 1rem;
+    font-size: 16px;
     margin-left: 23px;
   }
 
@@ -1508,13 +1508,13 @@ h4 i {
   #bar-graph::before {
     top: 75px;
     left: -27px;
-    font-size: 0.8rem;;
+    font-size: 13px;
   }
 
   #bar-graph::after {
     bottom: -18px;
     left: 108px;
-    font-size: 0.8rem;
+    font-size: 13px;
   }
 
   .bar {
@@ -1529,15 +1529,13 @@ h4 i {
     border-radius: 4px;
     width: 150px;
     padding: 8px 8px;
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   [data-tooltip-position="top"]::before {
     left: -84%;
   }
-  td {
-    font-size: 
-  }
+  
   td img {
     height: 20px;
     width: 20px;
