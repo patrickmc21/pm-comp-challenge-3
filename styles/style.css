@@ -217,7 +217,7 @@ header button {
   background-image: url('../icons/left-arrow.svg');
   background-size: 12px;
   background-repeat: no-repeat;
-  background-position: 13px 33px;
+  background-position: 24% 50%;
 }
 
 .menu:hover {
@@ -365,25 +365,6 @@ td div {
 .summary {
   color: #2D0002 !important;
   border-bottom: 4px solid #780006;   
-}
-
-[tooltip]::before {
-  content: '';
-  visibility: hidden;
-  position: absolute;
-  border-radius: 50px;
-  bottom: 91%;
-  left: 70%;
-  height: 200px;
-  width: 300px;
-  z-index: 10;
-  background-image: url('../images/snek.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-[tooltip]:hover::before {
-  visibility: visible;
 }
 
 .cycle-page-nav li:hover {
@@ -819,14 +800,53 @@ h4 i {
   background-color: #780006;
   color: #FFFFFF
 }
+@media screen and (min-width: 1800px) {
+  .site-nav {
+    height: 2105px;
+  }
+
+  .page-body {
+    height: 1785px;
+  }
+
+  .user-info {
+    height: 1300px;
+  }
+
+  .donut-figure, .bar-graph {
+    height: 376px;
+  }
+
+  .link-job {
+    width: 100%;
+  }
+
+  .resume {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 1243px) {
+  .menu {
+    background-position: 17% 50%;
+  }  
+
   .page-nav-edit {
     width: 42%;
   }
 
+  .cycle-page-nav li {
+    margin-right: 19px;
+  }
+
   .bar {
     width: 6.7%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .site-nav li {
+    font-size: 0.9rem;
   }
 }
 
@@ -841,9 +861,21 @@ h4 i {
     width: 80px;
   }
 
+  .user-profile h2 {
+    font-size: 10px;
+  }
+
+  .site-nav li {
+    font-size: 0.8rem;
+  }
+
   .page-nav {
     height: 231px;
   }
+
+  .menu {
+    background-position: 9% 50%;
+  }  
 
   .page-nav-edit {
     width: 58%;
@@ -859,6 +891,60 @@ h4 i {
 
   hr {
     width: 45.5%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .user-profile {
+    height: 155px;
+  }
+
+  .user-profile h2 {
+    font-size: 8px;
+  }
+
+  .site-nav li {
+    font-size: 0.7rem;
+    margin: 1px 0;
+  }
+
+  .main-nav,
+  .admin {
+    height: 250px;
+  }
+
+  header {
+    left: 12.8%;
+  }
+
+  .menu {
+    background-position: 1% 50%;
+  }  
+
+  .facebook img,
+  .twitter img, 
+  .instagram img {
+    margin-right: 14px;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .site-nav li {
+    font-size: 0.6rem;
+    margin: 1px 0;
+  }
+
+  .main-nav i, 
+  .admin i {
+    width: 17px;
+  }
+
+  th {
+    font-size: 82%;
+  }
+
+  td {
+    font-size: 82%;
   }
 }
 
@@ -878,9 +964,22 @@ h4 i {
   .bar {
     width: 5.8%;
   }
+
+  .facebook, 
+  .twitter, 
+  .instagram {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 724px) {
+  .site-nav {
+    height: 2031px;
+  }
+
+  header button {
+    font-size: 28px;
+  }
   .page-nav-header p{
     font-size: 0.7rem;
   }
@@ -889,8 +988,12 @@ h4 i {
     font-size: 0.7rem;
   }
 
+  .page-body {
+    height: 1722px;
+  }
+
   .page-nav-edit {
-    width: 35%;
+    width: 40%;
   }
 
   .page-nav-edit button {
@@ -901,6 +1004,7 @@ h4 i {
 
   #open {
     width: 24%; 
+    font-size: 12px;
   }
 
   .cycle-page-nav li {
@@ -909,6 +1013,10 @@ h4 i {
 
   .bar {
     width: 5.4%;
+  }
+
+  .user-info-header h3 {
+    font-size: 16px;
   }
 
   .social-media {
@@ -921,18 +1029,82 @@ h4 i {
 }
 
 @media screen and (max-width: 614px) {
+  #open {
+    font-size: 8px;
+  }
+
   .cycle-page-nav li {
     margin-right: 9px;
   }
 
+  .donut-figure figcaption,
+  .bar-graph figcaption {
+    font-size: 0.8rem;
+  }
+
   hr {
     width: 45%;
+  }
+
+  .user-info {
+    height: 848px;
+  }
+
+  .user-info-header,
+  tr {
+    height: 73px;
+  }
+
+  .user-info-header h3 {
+    font-size: 12px;
+  }
+
+  .social-media {
+    height: 480px;
+  }
+
+  .widget {
+    height: 193px;
+  }
+
+  .facebook, 
+  .twitter, 
+  .instagram {
+    font-size: 14px;
+  }
+
+  .link-job h4, 
+  .widget h4, 
+  .resume h4 {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .link-job p, 
+  .widget p, 
+  .resume p {
+    font-size: 14px;
+    margin-bottom: 11px;
+    line-height: 18px;
+  }
+
+  .link-job input, 
+  .widget input {
+    height: 50px;
+    width: 60%;
+  }
+
+  .link-job button, 
+  .widget button {
+    height: 50px;
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 565px) {
   .site-nav {
     width: 30%;
+    height: 2600px;
   }
 
   header,
@@ -941,14 +1113,39 @@ h4 i {
     left: 30%;
   }
 
+  header {
+    left: 30.5%;
+  }
+
+  header button {
+    font-size: 15px;
+  }
+
+  .menu {
+    background-size: 6px;
+  }
+
   .user-profile div {
     height: 80px;
     width: 80px;
   }
 
+  .user-profile h2 {
+    font-size: 14px;
+  }
+
   .profile-pic {
     height: 80px;
     width: 80px;
+  }
+
+  .site-nav li {
+    font-size: 1rem;
+  }
+
+  .main-nav i, 
+  .admin i {
+    width: 25px;
   }
 
   .page-nav-header p{
@@ -975,7 +1172,7 @@ h4 i {
   }
 
   .page-body {
-    height: 2600px;
+    height: 2288px;
   }
 
   .data-display {
@@ -997,12 +1194,12 @@ h4 i {
   }
 
   hr {
-    width: 44%
+    width: 43%
   }
 
   .user-info {
     width: 90%;
-    height: 1107px;
+    height: 836px;
     margin: 40px 5%;
   }
 
@@ -1011,15 +1208,14 @@ h4 i {
   }
 
   .user-info-header h3 {
-    display: block;
     margin-right: 4%;
-    font-size: 1.9rem;
+    font-size: 0.9rem;
   }
 
   .user-info-header button {
-    height: 34px;
-    width: 131px;
-    font-size: 1.4rem;
+    height: 30px;
+    width: 65px;
+    font-size: 1rem;
     margin-top: 18px;
   }
 
@@ -1047,6 +1243,11 @@ h4 i {
 
   .more-content input {
     height: 40px;
+    width: 74%;
+  }
+
+  .resume input {
+    width: 100%;
   }
 
   .social-media {
@@ -1118,6 +1319,10 @@ h4 i {
     padding-top: 0px;
   }
 
+  .user-profile {
+    height: 183px;
+  }
+
   .user-profile article {
     height: 190px;
   }
@@ -1136,7 +1341,7 @@ h4 i {
   .admin,
   .categories {
     display: inline-block;
-    height: 72px;
+    height: 89px;
     width: 33.5%;
     vertical-align: top;
     margin-right: -6px;
@@ -1148,7 +1353,7 @@ h4 i {
   .admin article,
   .categories article {
     height: 100px;
-
+    padding-top: 22%
   }
 
 .main-nav article ul,
@@ -1159,13 +1364,7 @@ h4 i {
 
   h5 {
     font-size: 1.5rem;
-    margin: 35% 0 0 0  ;
     text-align: center;
-  }
-
-  .categories h5 {
-    font-size: 1.1rem;
-    margin-top: 40%;
   }
 
 .main-nav article:hover ul,
@@ -1178,9 +1377,10 @@ h4 i {
   .main-nav:hover,
   .admin:hover,
   .categories:hover {
-    height: 370px;
+    height: 262px;
     z-index: 3;
     background-color: #780006;
+    transition-duration: 0.5s;
   }
 
   header {
@@ -1192,10 +1392,15 @@ h4 i {
   header input {
     height: 60px;
     width: 50%;
+    background-position: 13px 20px;
   }
 
   header input::placeholder {
     font-size: 1rem;
+  }
+
+  .menu {
+    background-position: 26% 50%;
   }
 
   header button {
@@ -1251,6 +1456,7 @@ h4 i {
     width: 15%;
     margin-left: 2px;
     height: 20px;
+    font-size: 10px;
   }
 
   #open {
@@ -1258,7 +1464,7 @@ h4 i {
   }
 
   .cycle-page-nav li {
-    font-size: 0.5rem;
+    font-size: 8px;
     margin-right: 2px;
     padding-bottom: 12px;
   }
@@ -1285,6 +1491,11 @@ h4 i {
   .donut-figure figure,
   .bar-graph figure {
     height: 173px;
+  }
+
+  .donut-figure figcaption, 
+  .bar-graph figcaption {
+    height: 40px;
   }
 
   .donut-figure figcaption {
@@ -1324,5 +1535,12 @@ h4 i {
 
   [data-tooltip-position="top"]::before {
     left: -84%;
+  }
+  td {
+    font-size: 
+  }
+  td img {
+    height: 20px;
+    width: 20px;
   }
 }
