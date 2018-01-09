@@ -120,35 +120,35 @@ h5 {
   vertical-align: top;
 }
 
-.one div {
+.colorado div {
   background-color: red;
 }
 
-.one div:hover {
+.colorado div:hover {
   background-color: darkred;
 }
 
-.two div {
+.utah div {
   background-color: blue;
 }
 
-.two div:hover {
+.utah div:hover {
   background-color: darkblue;
 }
 
-.three div {
+.new-mexico div {
   background-color: green;
 }
 
-.three div:hover {
+.new-mexico div:hover {
   background-color: darkgreen;
 }
 
-.four div {
+.arizona div {
   background-color: orange;
 }
 
-.four div:hover {
+.arizona div:hover {
   background-color: darkorange;
 }
 
@@ -692,7 +692,7 @@ td p {
   border-bottom: 2px solid black;
 }
 
-.widget {
+.gpx {
   height: 295px;
   width: 100%;
   border-bottom: 2px solid black;
@@ -746,9 +746,9 @@ td p {
   background: linear-gradient(to right, #C63D85, #594EC6)
 }
 
-.link-job h4,
-.widget h4,
-.resume h4 {
+.link-trail h4,
+.gpx h4,
+.send-trail h4 {
   font-size: 26px;
   margin: 40px 0 20px 0;
 }
@@ -757,34 +757,34 @@ h4 i {
   margin-right: 6px;
 }
 
-.link-job p,
-.widget p,
-.resume p {
+.link-trail p,
+.gpx p,
+.send-trail p {
   font-size: 18px;
   margin-bottom: 11px;
   line-height: 24px;
 }
 
-.link-job input,
-.widget input {
+.link-trail input,
+.gpx input {
   height: 80px;
   width: 74.5%;
   margin: 0 -2px 0 0;
 }
 
-.resume input {
+.send-trail input {
   height: 80px;
   width: 100%;
 }
 
-.link-job input::placeholder,
-.widget input::placeholder,
-.resume input::placeholder {
+.link-trail input::placeholder,
+.gpx input::placeholder,
+.send-trail input::placeholder {
   font-size: 18px;
 }
 
-.link-job button,
-.widget button {
+.link-trail button,
+.gpx button {
   vertical-align: top;
   font-size: 16px;
   display: inline;
@@ -795,8 +795,8 @@ h4 i {
   color: #3D3D3D;
 }
 
-.link-job button:hover,
-.widget button:hover {
+.link-trail button:hover,
+.gpx button:hover {
   background-color: #780006;
   color: #FFFFFF
 }
@@ -817,11 +817,11 @@ h4 i {
     height: 376px;
   }
 
-  .link-job {
+  .link-trail {
     width: 100%;
   }
 
-  .resume {
+  .send-trail {
     width: 100%;
   }
 }
@@ -1023,7 +1023,7 @@ h4 i {
     height: 625px;
   }
 
-  .widget {
+  .gpx {
     height: 340px;
   }
 }
@@ -1063,7 +1063,7 @@ h4 i {
     height: 480px;
   }
 
-  .widget {
+  .gpx {
     height: 193px;
   }
 
@@ -1073,29 +1073,29 @@ h4 i {
     font-size: 14px;
   }
 
-  .link-job h4, 
-  .widget h4, 
-  .resume h4 {
+  .link-trail h4, 
+  .gpx h4, 
+  .send-trail h4 {
     font-size: 18px;
     margin-top: 8px;
   }
 
-  .link-job p, 
-  .widget p, 
-  .resume p {
+  .link-trail p, 
+  .gpx p, 
+  .send-trail p {
     font-size: 14px;
     margin-bottom: 11px;
     line-height: 18px;
   }
 
-  .link-job input, 
-  .widget input {
+  .link-trail input, 
+  .gpx input {
     height: 50px;
     width: 60%;
   }
 
-  .link-job button, 
-  .widget button {
+  .link-trail button, 
+  .gpx button {
     height: 50px;
     width: 40%;
   }
@@ -1246,7 +1246,7 @@ h4 i {
     width: 74%;
   }
 
-  .resume input {
+  .send-trail input {
     width: 100%;
   }
 
@@ -1256,27 +1256,28 @@ h4 i {
     margin-right: 2%;
   }
 
-  .link-job {
+  .link-trail {
     width: 100%;
     display: block;
     vertical-align: top;
   }
 
-  .social-media .link-job button,
-  .widget button {
+  .social-media 
+  .link-trail button,
+  .gpx button {
     height: 40px;
     width: 25.5%;
   }
 
-  .link-job h4,
-  .widget h4,
-  .resume h4 {
+  .link-trail h4,
+  .gpx h4,
+  .send-trail h4 {
     font-size: 1.3rem;
     margin: 11px 0 8px 0;
   }
 
-  .widget h4,
-  .resume h4 {
+  .gpx h4,
+  .send-trail h4 {
     margin-bottom: 14px;
   }
 
@@ -1286,9 +1287,9 @@ h4 i {
     margin-right: 2%;
   }
 
-  .link-job p,
-  .widget p,
-  .resume p {
+  .link-trail p,
+  .gpx p,
+  .send-trail p {
     margin-bottom: 7px;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1298,8 +1299,8 @@ h4 i {
     height: 40px;
   }
 
-  .widget,
-  .resume {
+  .gpx,
+  .send-trail {
     height: 152px;
     width: 100%;
     vertical-align: top;
