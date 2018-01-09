@@ -24,7 +24,7 @@
       </section>
       <section class="main-nav">
         <article>
-          <h5>Main</h5>
+          <h5 >Main</h5>
           <ul>
             <li><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
             <li><i class="fa fa-map" aria-hidden="true"></i>Trails</li>
@@ -50,33 +50,33 @@
         <article>
           <h5>Region</h5>
           <ul>
-            <li class="one">
+            <li class="colorado">
               <div>
-                <input type="checkbox" checked="true" id="one">
+                <input type="checkbox" checked="true" id="colorado">
                 <span class="checkmark"></span>
               </div>
-              <label for="one">Colorado</label>
+              <label for="colorado">Colorado</label>
             </li>
-            <li class="two">
+            <li class="utah">
               <div>
-                <input type="checkbox" id="two">
+                <input type="checkbox" id="utah">
                 <span class="checkmark"></span>
               </div>
-              <label for="two">Utah</label>
+              <label for="utah">Utah</label>
             </li>
-            <li class="three">
+            <li class="new-mexico">
               <div>
-                <input type="checkbox" id="three">
+                <input type="checkbox" id="new-mexico">
                 <span class="checkmark"></span>
               </div>
-              <label for="three">New Mexico</label>
+              <label for="new-mexico">New Mexico</label>
             </li>
-            <li class="four">
+            <li class="arizona">
               <div>
-                <input type="checkbox" id="four">
+                <input type="checkbox" id="arizona">
                 <span class="checkmark"></span>
               </div>
-              <label for="four">Arizona</label>
+              <label for="arizona">Arizona</label>
             </li>
           </ul>
         </article>
@@ -85,11 +85,11 @@
   </aside>
   <header>
     <form>
-      <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
-      <input type="text" name="search" placeholder="Search Trails">
-      <button><i class="fa fa-user-plus" aria-hidden="true"></i></button>
-      <button><i class="fa fa-list" aria-hidden="true"></i></button>
-      <button><i class="fa fa-th" aria-hidden="true"></i></button>
+      <button class="menu" aria-label="open navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <input type="text" name="search" placeholder="Search Trails" aria-label="search trail systems">
+      <button aria-label="add users"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+      <button aria-label="list of trail systems"><i class="fa fa-list" aria-hidden="true"></i></button>
+      <button aria-label="back to main menu"><i class="fa fa-th" aria-hidden="true"></i></button>
     </form>
   </header>
   <main>
@@ -104,13 +104,13 @@
         </article>
         <article class="page-nav-edit">
           <ul>
-            <li><button id="open"><div></div>Open</button></li>
-            <li><button><i class="fa fa-bookmark" aria-hidden="true"></i></button></li>
-            <li><button><i class="fa fa-pencil" aria-hidden="true"></i></button></li>
-            <li><button><i class="fa fa-trash" aria-hidden="true"></i></button></li>
+            <li><button id="open" aria-labl="open page in browser"><div></div>Open</button></li>
+            <li><button class="bookmark page"><i class="fa fa-bookmark" aria-hidden="true"></i></button></li>
+            <li><button aria-label="edit page"><i class="fa fa-pencil" aria-hidden="true"></i></button></li>
+            <li><button aria-label="delete page"><i class="fa fa-trash" aria-hidden="true"></i></button></li>
           </ul>
         </article>
-        <article class="cycle-page-nav">
+        <article class="cycle-page-nav" role="navigation" aria-label="navigate page">
           <ul>
             <li class="summary">Summary</li>
             <li>Trails</li>
@@ -127,7 +127,7 @@
       <article class="data-display">
         <div class="donut-figure">
           <figure>
-            <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut">
+            <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut" aria-label="36 new ride reports">
               <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="gray"></circle>
               <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="#FFFFFF" stroke="gray" stroke-width="3"></circle>
               <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#1E2B00" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
@@ -140,7 +140,7 @@
                 </text>
               </g>
             </svg>
-            <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut">
+            <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut" aria-label="23 new condition updates">
               <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="gray"></circle>
               <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="#FFFFFF" stroke="gray" stroke-width="3"></circle>
               <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#6AB099" stroke-width="3" stroke-dasharray="65 35" stroke-dashoffset="25"></circle>
@@ -153,7 +153,7 @@
                 </text>
               </g>
             </svg>
-            <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut">
+            <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut" aria-label=" 3 new photos">
               <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="gray"></circle>
               <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="#FFFFFF" stroke="gray" stroke-width="3"></circle>
               <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#9A161D" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="25"></circle>
@@ -171,34 +171,37 @@
         </div>
         <div class="bar-graph">
           <figure>
-            <div id="bar-graph" data-x-label="Month" data-y-label="Posts">
+            <div id="bar-graph" data-x-label="Month" data-y-label="Posts" aria-label="Bar graph representing number of posts per month">
               <span class="bar"></span>
-              <span class="bar bar-one" data-tooltip="January: 10 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-two" data-tooltip="February: 8 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-three" data-tooltip="March: 20 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-four" data-tooltip="April: 32 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-five" data-tooltip="May: 56 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-six" data-tooltip="June: 88 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-seven" data-tooltip="July: 96 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-eight" data-tooltip="August: 92 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-nine" data-tooltip="September: 84 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-ten" data-tooltip="October: 72 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-eleven" data-tooltip="November: 24 posts" data-tooltip-position="top"></span>
-              <span class="bar bar-twelve" data-tooltip="December: 12 posts" data-tooltip-position="top"></span>         
+              <span class="bar bar-one" data-tooltip="January: 10 posts" aria-label="January: 10 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-two" data-tooltip="February: 8 posts" data-tooltip-position="top"
+              aria-label="February: 8 posts"></span>
+              <span class="bar bar-three" data-tooltip="March: 20 posts" data-tooltip-position="top"
+              aria-label="March: 20 posts"></span>
+              <span class="bar bar-four" data-tooltip="April: 32 posts" data-tooltip-position="top"
+              aria-label="April: 32 posts"></span>
+              <span class="bar bar-five" data-tooltip="May: 56 posts" data-tooltip-position="top" aria-label="May: 56 posts"></span>
+              <span class="bar bar-six" data-tooltip="June: 88 posts" data-tooltip-position="top" aria-label="June: 88 posts"></span>
+              <span class="bar bar-seven" data-tooltip="July: 96 posts" data-tooltip-position="top" aria-label="July: 96 posts"></span>
+              <span class="bar bar-eight" data-tooltip="August: 92 posts" data-tooltip-position="top" aria-label="August: 92 posts"></span>
+              <span class="bar bar-nine" data-tooltip="September: 84 posts" data-tooltip-position="top" aria-label="September: 84 posts"></span>
+              <span class="bar bar-ten" data-tooltip="October: 72 posts" data-tooltip-position="top" aria-label="October: 72 posts"></span>
+              <span class="bar bar-eleven" data-tooltip="November: 24 posts" data-tooltip-position="top" aria-label="November: 24 posts"></span>
+              <span class="bar bar-twelve" data-tooltip="December: 12 posts" data-tooltip-position="top" aria-label="December: 12 posts"></span>         
             </div>
           </figure>
           <figcaption>Trail Updates by Month</figcaption>
         </div>
         <hr class="left">
-        <button class="border-button"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+        <button class="border-button" aria-label="expand page"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
         <hr class="right">
       </article>
       <article class="user-info">
         <div class="user-info-header">
           <h3>Trail System Description</h3>
-          <button><i class="fa fa-pencil" aria-hidden="true"></i>Edit</button>
+          <button><i class="fa fa-pencil" aria-hidden="true" aria-label="edit trail information"></i>Edit</button>
         </div>
-        <table>
+        <table role="complementary">
           <tr>
             <th>Trail System Type</th>
             <td>Multi-use recreation area</td>
@@ -254,27 +257,27 @@
         <form>
           <article class="social-media">
             <div class ="social-media-buttons">
-              <button class="facebook"><img src="images/facebook.ico">Post to Facebook</button>
-              <button class="twitter"><img src="images/twitter.ico">Post to Twitter</button>
-              <button class="instagram"><img src="images/instagram.png">Post to Instagram</button>
+              <button class="facebook" aria-label="post trail to facebook"><img src="images/facebook.ico" aria-hidden="true">Post to Facebook</button>
+              <button class="twitter" aria-label="post trail to twitter"><img src="images/twitter.ico" aria-hidden="true">Post to Twitter</button>
+              <button class="instagram" aria-label="post trail to instagram"><img src="images/instagram.png" aria-hidden="true">Post to Instagram</button>
             </div>
-            <article class="link-job">
+            <article class="link-trail">
               <h4><i class="fa fa-globe" aria-hidden="true"></i>Link to this Trail</h4>
               <p>Post link to this trail system on your personal website</p>
-              <input type="text" name="job-link" placeholder="https://www.303trailmonitor.com/WhiteRanch">
-              <button>Copy</button>
+              <input type="text" name="trail-link" placeholder="https://www.303trailmonitor.com/WhiteRanch" aria-label="trail page link">
+              <button aria-label="copy trail page link to clipboard">Copy</button>
             </article>
           </article>
-          <article class="widget">
+          <article class="gpx">
             <h4><i class="fa fa-cloud-download" aria-hidden="true"></i>Download Trail GPX</h4>
             <p>Download trail .gpx file for use on Garmin/Strava devices</p>
-            <input type="text" name="job-link" placeholder="white-ranch.jeffcoparksrec.gpx">
-            <button>Copy</button>
+            <input type="text" name="gpx-file" placeholder="white-ranch.jeffcoparksrec.gpx" aria-label="gpx file">
+            <button aria-label="copy trail gpx file to clipboard">Copy</button>
           </article>
-          <article class="resume">
+          <article class="send-trail">
             <h4><i class="fa fa-upload" aria-hidden="true"></i>Send Trail by Email</h4>
             <p>Get up to date trail information sent to your mobile device</p>
-            <input type="email" name="job-link" placeholder="PattyMac&Chz@askjeeves.com">
+            <input type="email" name="job-link" placeholder="PattyMac&Chz@askjeeves.com" aria-label="send trail to email address">
           </article>
         </form>
       </aside>
