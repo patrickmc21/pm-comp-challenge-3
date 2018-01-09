@@ -1,30 +1,36 @@
-<!DOCTYPE html>
+≈<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Neuton:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <title>Static Comp 3</title>
+  <title>303 Trail Monitor - White Ranch</title>
 </head>
 <body>
   <aside class="site-nav">
     <nav>
       <section class="user-profile">
         <article>
-          <div class="profile-pic"></div>
-          <h2>First LastName</h2>
+          <div>
+            <img src="images/profile-pic.jpg" 
+          class="profile-pic">
+          </div>
+          <h2>Pat McLaughlin<i class="fa fa-angle-down" aria-hidden="true"></i></h2>
         </article>
       </section>
       <section class="main-nav">
         <article>
           <h5>Main</h5>
           <ul>
-            <li><img src="">One</li>
-            <li><img src="">Two</li>
-            <li><img src="">Three</li>
-            <li><img src="">Four</li>
-            <li><img src="">Five</li>
+            <li><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
+            <li><i class="fa fa-map" aria-hidden="true"></i>Trails</li>
+            <li><i class="fa fa-sun-o" aria-hidden="true"></i>Conditions</li>
+            <li><i class="fa fa-plus" aria-hidden="true"></i>Recent Updates</li>
+            <li><i class="fa fa-forumbee" aria-hidden="true"></i>Forum</li>
           </ul>
         </article>
       </section>
@@ -32,45 +38,45 @@
         <article>
           <h5>Admin</h5>
           <ul>
-            <li><img src="">One</li>
-            <li><img src="">Two</li>
-            <li><img src="">Three</li>
-            <li><img src="">Four</li>
-            <li><img src="">Five</li>
+            <li><i class="fa fa-users" aria-hidden="true"></i>Users</li>
+            <li><i class="fa fa-lock" aria-hidden="true"></i>Moderators</li>
+            <li><i class="fa fa-flag" aria-hidden="true"></i>Flagged Posts</li>
+            <li><i class="fa fa-bar-chart" aria-hidden="true"></i>Site Statistics</li>
+            <li><i class="fa fa-file-text" aria-hidden="true"></i>Trail Pages</li>
           </ul>
         </article>
       </section>
       <section class="categories">
         <article>
-          <h5>Categories</h5>
+          <h5>Region</h5>
           <ul>
             <li class="one">
               <div>
                 <input type="checkbox" checked="true" id="one">
                 <span class="checkmark"></span>
               </div>
-              <label for="one">One</label>
+              <label for="one">Colorado</label>
             </li>
             <li class="two">
               <div>
                 <input type="checkbox" id="two">
                 <span class="checkmark"></span>
               </div>
-              <label for="two">Two</label>
+              <label for="two">Utah</label>
             </li>
             <li class="three">
               <div>
                 <input type="checkbox" id="three">
                 <span class="checkmark"></span>
               </div>
-              <label for="three">Three</label>
+              <label for="three">New Mexico</label>
             </li>
             <li class="four">
               <div>
                 <input type="checkbox" id="four">
                 <span class="checkmark"></span>
               </div>
-              <label for="four">Four</label>
+              <label for="four">Arizona</label>
             </li>
           </ul>
         </article>
@@ -78,39 +84,41 @@
     </nav>
   </aside>
   <header>
-    <button></button>
-    <input type="text" name="search" placeholder="Search for something">
-    <button></button>
-    <button></button>
-    <button></button>
+    <form>
+      <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <input type="text" name="search" placeholder="Search Trails">
+      <button><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+      <button><i class="fa fa-list" aria-hidden="true"></i></button>
+      <button><i class="fa fa-th" aria-hidden="true"></i></button>
+    </form>
   </header>
   <main>
     <section class="page-nav">
       <div>
         <article class="page-nav-header">
-          <h1> Job Title</h1>
-          <p> Location at Location</p>
+          <h1>White Ranch</h1>
+          <p>Golden, CO</p>
           <ul>
-            <li> Preview Post </li>
+            <li>Preview Post</li>
           </ul>
         </article>
         <article class="page-nav-edit">
           <ul>
-            <li><button id="open">Open</button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
+            <li><button id="open"><div></div>Open</button></li>
+            <li><button><i class="fa fa-bookmark" aria-hidden="true"></i></button></li>
+            <li><button><i class="fa fa-pencil" aria-hidden="true"></i></button></li>
+            <li><button><i class="fa fa-trash" aria-hidden="true"></i></button></li>
           </ul>
         </article>
         <article class="cycle-page-nav">
           <ul>
             <li class="summary">Summary</li>
-            <li>Applicants</li>
-            <li>Job Board</li>
-            <li>Interviews</li>
-            <li>Activity</li>
-            <li>Broadcast</li>
-            <li>Notifications</li>
+            <li>Trails</li>
+            <li>Trail Conditions</li>
+            <li>Animal Activity</li>
+            <li>Pictures</li>
+            <li>Group Rides</li>
+            <li class="snek" tooltip="">Sneks!</li>
           </ul>
         </article>
       </div>
@@ -120,93 +128,155 @@
         <div class="donut-figure">
           <figure>
             <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut">
-              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#fff"></circle>
-              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="gray" stroke="#d2d3d4" stroke-width="3"></circle>
-              <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="85 15" stroke-offset="0"></circle>
+              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="gray"></circle>
+              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="#FFFFFF" stroke="gray" stroke-width="3"></circle>
+              <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#1E2B00" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
+              <g class="donut-text">
+                <text x="50%" y="50%" class="donut-data">
+                  36
+                </text>
+                <text x="50%" y="50%" class="donut-title">
+                  Ride Reports
+                </text>
+              </g>
             </svg>
             <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut">
-              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#fff"></circle>
-              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="gray" stroke="#d2d3d4" stroke-width="3"></circle>
-              <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3"></circle>
+              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="gray"></circle>
+              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="#FFFFFF" stroke="gray" stroke-width="3"></circle>
+              <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#6AB099" stroke-width="3" stroke-dasharray="65 35" stroke-dashoffset="25"></circle>
+              <g class="donut-text">
+                <text x="50%" y="50%" class="donut-data">
+                  23
+                </text>
+                <text x="50%" y="50%" class="donut-title2">
+                  Condition Updates
+                </text>
+              </g>
             </svg>
             <svg width="32%" height="100%" viewBox="0 0 40 40" class="donut">
-              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#fff"></circle>
-              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="gray" stroke="#d2d3d4" stroke-width="3"></circle>
-              <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3"></circle>
+              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="gray"></circle>
+              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="#FFFFFF" stroke="gray" stroke-width="3"></circle>
+              <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#9A161D" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="25"></circle>
+              <g class="donut-text">
+                <text x="50%" y="50%" class="donut-data">
+                  3
+                </text>
+                <text x="50%" y="50%" class="donut-title">
+                  New Photos
+                </text>
+              </g>
             </svg>
           </figure>
-          <figcaption></figcaption>
+          <figcaption>Trail Information</figcaption>
         </div>
         <div class="bar-graph">
           <figure>
-            
+            <div id="bar-graph" data-x-label="Month" data-y-label="Posts">
+              <span class="bar"></span>
+              <span class="bar bar-one" data-tooltip="January: 10 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-two" data-tooltip="February: 8 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-three" data-tooltip="March: 20 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-four" data-tooltip="April: 32 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-five" data-tooltip="May: 56 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-six" data-tooltip="June: 88 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-seven" data-tooltip="July: 96 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-eight" data-tooltip="August: 92 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-nine" data-tooltip="September: 84 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-ten" data-tooltip="October: 72 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-eleven" data-tooltip="November: 24 posts" data-tooltip-position="top"></span>
+              <span class="bar bar-twelve" data-tooltip="December: 12 posts" data-tooltip-position="top"></span>         
+            </div>
           </figure>
-          <figcaption></figcaption>
+          <figcaption>Trail Updates by Month</figcaption>
         </div>
+        <hr class="left">
+        <button class="border-button"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+        <hr class="right">
       </article>
       <article class="user-info">
         <div class="user-info-header">
-          <h3>Job Description</h3>
-          <button>Edit</button>
+          <h3>Trail System Description</h3>
+          <button><i class="fa fa-pencil" aria-hidden="true"></i>Edit</button>
         </div>
         <table>
           <tr>
-            <th>Position Title</th>
-            <td>Customer Service Rep</td>
+            <th>Trail System Type</th>
+            <td>Multi-use recreation area</td>
           </tr>
           <tr>
             <th>Location</th>
-            <td>San Francisco, CA</td>
+            <td>Golden, CO</td>
           </tr>
           <tr>
-            <th>Employment Type</th>
-            <td>Full Time</td>
+            <th>Trail Restrictions</th>
+            <td>None</td>
           </tr>
           <tr>
-            <th>Experience</th>
-            <td>Mid-Level</td>
+            <th>Campgrounds</th>
+            <td>
+              <p>24 dispersed spots<p>
+              <p>Tent pads, picnic tables, charcoal grill</p>
+            </td>
           </tr>
           <tr>
             <th>Status</th>
-            <td>Open</td>
+            <td><div></div>Open</td>
           </tr>
           <tr class="description">
-            <th>Description</th>
-            <td>The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour amplifying condiments. Why are you still reading this- go get a cheeseburger.</td>
+            <th>Trails</th>
+            <td>
+              <ul>
+                <li>Belcher Hill</li>
+                <li>Mustang</li>
+                <li>Round Up</li> 
+                <li>Maverick</li>
+                <li>Longhorn</li>
+                <li>Shorthorn</li>
+                <li>Rawhide</li>
+                <li>Whippletree</li>
+              </ul>
+            </td>
           </tr>
           <tr>
-            <th>Hiring Lead</th>
-            <td>J Mascis</td>
+            <th>Supervising Body</th>
+            <td class="supervisor">
+              <img src="images/jeffco.png">
+              <p>Jefferson County Open Space</p>
+            </td>
           </tr>
-          <tr>
-            <th>Approved Salary</th>
-            <td>$1,000,000</td>
+          <tr class="table-bottom">
+            <th>Annual Users</th>
+            <td>545,000</td>
           </tr>
         </table>
       </article>
       <aside class="more-content">
-        <article class="social-media">
-          <button>Post to Facebook</button>
-          <button>Post to Twitter</button>
-          <button>Post to LinkedIn</button>
-          <article class="link-job">
-            <h4>Link to this Job</h4>
-            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.</p>
-            <input type="text" name="job-link" placeholder="https://www.meettheipsums.com">
+        <form>
+          <article class="social-media">
+            <div class ="social-media-buttons">
+              <button class="facebook"><img src="images/facebook.ico">Post to Facebook</button>
+              <button class="twitter"><img src="images/twitter.ico">Post to Twitter</button>
+              <button class="instagram"><img src="images/instagram.png">Post to Instagram</button>
+            </div>
+            <article class="link-job">
+              <h4><i class="fa fa-globe" aria-hidden="true"></i>Link to this Trail</h4>
+              <p>Post link to this trail system on your personal website</p>
+              <input type="text" name="job-link" placeholder="https://www.303trailmonitor.com/WhiteRanch">
+              <button>Copy</button>
+            </article>
+          </article>
+          <article class="widget">
+            <h4><i class="fa fa-cloud-download" aria-hidden="true"></i>Download Trail GPX</h4>
+            <p>Download trail .gpx file for use on Garmin/Strava devices</p>
+            <input type="text" name="job-link" placeholder="white-ranch.jeffcoparksrec.gpx">
             <button>Copy</button>
           </article>
-        </article>
-        <article class="widget">
-          <h4>Use the Widget Button</h4>
-          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.</p>
-          <input type="text" name="job-link" placeholder="<script type=text/javascript></script>">
-          <button>Copy</button>
-        </article>
-        <article class="resume">
-          <h4>Upload Resume by Email</h4>
-          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.</p>
-          <input type="email" name="job-link" placeholder=ZombieIpsum@askjeeves.com>
-        </article>
+          <article class="resume">
+            <h4><i class="fa fa-upload" aria-hidden="true"></i>Send Trail by Email</h4>
+            <p>Get up to date trail information sent to your mobile device</p>
+            <input type="email" name="job-link" placeholder="PattyMac&Chz@askjeeves.com">
+          </article>
+        </form>
       </aside>
     </section>
   </main>

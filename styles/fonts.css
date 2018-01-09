@@ -1,0 +1,24 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Neuton', serif;*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+th,
+.donut-title,
+figcaption {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p,
+li,
+td,
+a,
+button,
+input::placeholder,
+.donut-data {
+  font-family: 'Neuton', serif;  
+}
+
