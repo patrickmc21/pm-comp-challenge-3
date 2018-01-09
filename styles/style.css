@@ -200,8 +200,8 @@ header {
 
 header button {
   padding: 0;
-  border-right: 1px solid #d3d3d3;
   border-style: none; 
+  border-right: 1px solid #d3d3d3;
   border-radius: 0;
   margin: 0 -2px;
   height: 78px;
@@ -394,28 +394,6 @@ td div {
   width: 47.5%;
 }
 
-hr {
-  display: inline-block;
-  width: 47%;
-  border-color: #000000;
-}
-
-.border-button {
-  padding: 5px;
-  border-style: none;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  margin: 0 1%;
-  width: 25px;
-  vertical-align: top;
-  background-color: transparent;
-  font-size: 12px;
-}
-
-.border-button:focus {
-  outline: 0;
-}
-
 .donut-figure {
   float: left;
   margin-right: 4.6%;
@@ -596,6 +574,28 @@ hr {
     border-width: 6px 6px 0;
     border-right-color: #000000;
     transform: rotate(45deg);
+}
+
+hr {
+  display: inline-block;
+  width: 47%;
+  border-color: #000000;
+}
+
+.border-button {
+  padding: 5px;
+  border-style: none;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin: 0 1%;
+  width: 25px;
+  vertical-align: top;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+.border-button:focus {
+  outline: 0;
 }
 
 .user-info {
